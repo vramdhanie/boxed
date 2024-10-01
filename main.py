@@ -111,7 +111,7 @@ def find_optional_solutions(words, all_chars):
             if i != j and sorted_words[i][-1] == sorted_words[j][0]:
                 if len(sorted_words[i]) + len(sorted_words[j]) >= len(all_chars):
                     word_pairs.append((sorted_words[i], sorted_words[j]))
-    print(word_pairs)
+    
     # Filter pairs to ensure they use all characters
     for pair in word_pairs:
         combined_chars = set(pair[0] + pair[1])
